@@ -21,7 +21,8 @@ class MainApp extends StatelessWidget {
               ElevatedButton(
                 onPressed: () async {
                   final player = AudioPlayer();
-                  await player.setUrl('assets/audio/yasuko_kafun.mp3');
+                  await player.setUrl(
+                      'https://firebasestorage.googleapis.com/v0/b/training24yasuko.appspot.com/o/yasuko_kafun.mp3?alt=media');
                   player.play();
                 },
                 child: const Text('ｶﾌﾝ----!'),
@@ -30,7 +31,8 @@ class MainApp extends StatelessWidget {
               ElevatedButton(
                 onPressed: () async {
                   final player = AudioPlayer();
-                  await player.setUrl('assets/audio/yasuko_hi_long.mp3');
+                  await player.setUrl(
+                      'https://firebasestorage.googleapis.com/v0/b/training24yasuko.appspot.com/o/yasuko_hi_long.mp3?alt=media');
                   player.play();
                 },
                 child: const Text('longﾊｲ----!'),
@@ -39,7 +41,8 @@ class MainApp extends StatelessWidget {
               ElevatedButton(
                 onPressed: () async {
                   final player = AudioPlayer();
-                  await player.setUrl('assets/audio/yasuko_hi_short.mp3');
+                  await player.setUrl(
+                      'https://firebasestorage.googleapis.com/v0/b/training24yasuko.appspot.com/o/yasuko_hi_short.mp3?alt=media');
                   player.play();
                 },
                 child: const Text('ﾊｲ----!'),
