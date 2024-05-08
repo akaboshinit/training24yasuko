@@ -11,6 +11,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "やす子は一歩も引かない",
       home: Scaffold(
         body: SizedBox(
           width: double.infinity,
