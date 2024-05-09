@@ -1,3 +1,3 @@
 deploy:
-	flutter build web
+	flutter build web --web-renderer html --release
 	firebase deploy
