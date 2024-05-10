@@ -140,7 +140,7 @@ class App extends HookWidget {
                       ),
                       Positioned(
                         bottom: 0,
-                        height: 390,
+                        height: 250,
                         width: maxWidth,
                         child: Container(
                           foregroundDecoration: const BoxDecoration(
@@ -160,10 +160,6 @@ class App extends HookWidget {
                           ),
                         ),
                       ),
-                      // const Positioned(
-                      //   top: 400,
-                      //   child:
-                      // )
                     ],
                   ),
                 ),
