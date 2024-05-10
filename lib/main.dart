@@ -54,19 +54,12 @@ class MainApp extends HookWidget {
 final db = FirebaseFirestore.instance;
 final yasukoCollection = db.collection("yasukoCount");
 final player = AudioPlayer();
+final maxWidth = 400.toDouble();
 
 class App extends HookWidget {
   const App({super.key});
   @override
   Widget build(BuildContext context) {
-    // final hiCountStream =
-    //     useStream(yasukoCollection.doc(AudioType.hiShort.name).snapshots());
-    // final kafunCountStream =
-    //     useStream(yasukoCollection.doc(AudioType.kafun.name).snapshots());
-
-    final hiCount = useState(0);
-    final kafunCount = useState(0);
-
     useEffect(() {
       player.setVolume(1.0);
       for (var url in AudioType.values) {
@@ -77,22 +70,6 @@ class App extends HookWidget {
 
       return null;
     }, []);
-
-    // useEffect(() {
-    //   if (hiCountStream.data?.data()!["count"] != null &&
-    //       hiCountStream.data?.data()!["count"] != 1) {
-    //     // hiCount.value = hiCountStream.data?.data()!["count"] ?? 0;
-    //   }
-    //   return null;
-    // }, [hiCountStream.data]);
-
-    // useEffect(() {
-    //   if (kafunCountStream.data?.data()!["count"] != null &&
-    //       kafunCountStream.data?.data()!["count"] != 1) {
-    //     // kafunCount.value = kafunCountStream.data?.data()!["count"] ?? 0;
-    //   }
-    //   return null;
-    // }, [kafunCountStream.data]);
 
     Future<void> tap({
       required AudioType type,
@@ -112,8 +89,6 @@ class App extends HookWidget {
         "count": FieldValue.increment(1),
       }, SetOptions(merge: true));
     }
-
-    final maxWidth = 400.toDouble();
 
     return Scaffold(
       backgroundColor: Colors.black,
