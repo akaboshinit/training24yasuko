@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <html prefix="og: http://ogp.me/ns#">
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
   <!--
@@ -14,8 +15,6 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="$FLUTTER_BASE_HREF">
-
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="">
@@ -46,41 +45,11 @@
   <meta name="twitter:site" content="@a">
   <meta name="twitter:title" content="一歩も引かないやす子">
   <meta name="twitter:description" content="">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = null;
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
 </head>
-<body>
-     <!-- <script type="text/javascript">
-        document.location = "https://training24yasuko.web.app/basic/";
-    </script> -->
-
-<!-- <script type="text/javascript">
-	var pass = window.prompt("password", "");
-
-	if(pass != 'hi'){
-		location.href.href = "404.html";
-	}
-</script> -->
-
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
-</body>
+  <body>
+    <script type="text/javascript">
+        document.location = "https://training24yasuko.web.app/";
+    </script>
+  </body>
 </html>
+
