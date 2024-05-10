@@ -47,7 +47,7 @@ class MainApp extends HookWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        title: "やす子は一歩も引かない", debugShowCheckedModeBanner: false, home: App());
+        title: "一歩も引かないやす子", debugShowCheckedModeBanner: false, home: App());
   }
 }
 

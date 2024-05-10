@@ -1,11 +1,11 @@
 {
-    "name": "やす子は一歩も引かない",
-    "short_name": "やす子は一歩も引かない",
+    "name": "一歩も引かないやす子",
+    "short_name": "一歩も引かないやす子",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#197E00",
     "theme_color": "#197E00",
-    "description": "やす子は一歩も引かない",
+    "description": "一歩も引かないやす子",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
